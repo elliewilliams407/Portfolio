@@ -1,0 +1,2 @@
+
+Pixels are the fundamental building blocks of bitmap images and digital displays. Conventionally, pixels are square, uniform, and parked in a static Cartesian grid. The purpose of this project was challenging these assumptions by writing code to reconstruct an image using custom picture elements. This code takes in a folder of images to create the selected "main" image. That folder of images; therefore, becomes the pixels.
