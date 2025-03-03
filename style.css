@@ -16,7 +16,7 @@ body {
 
 /* Header */
 header {
-    background: #0077cc;
+    background: #576e58;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -46,7 +46,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #0077cc;
+    color: #576e58;
     font-weight: bold;
 }
 
