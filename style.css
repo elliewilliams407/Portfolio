@@ -65,6 +65,33 @@ section h2 {
 }
 
 /* Project Cards */
+.experience-card {
+    border: 1px solid #1c1915;
+    color: #000000;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 15px;
+    text-align: center;
+    background: #9e998d;
+}
+
+.experience-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.experience-card a {
+    text-decoration: none;
+    color: #576e58;
+    font-weight: bold;
+}
+
+.experience-card a:hover {
+    text-decoration: underline;
+}
+
+/* Project Cards */
 .project-card {
     border: 1px solid #1c1915;
     color: #000000;
