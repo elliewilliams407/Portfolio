@@ -1,43 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Danielle showcasing projects and achievements">
-    <title>My Computer Science Projects:</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Danielle showcasing projects and achievements">
+  <title>Danielle | Computer Science Projects</title>
+  <style>
+    /* ===== Global Styles ===== */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9fb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    h1, h2, h3 {
+      font-weight: 600;
+      color: #222;
+    }
+
+    /* ===== Header ===== */
+    header {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    header p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    /* ===== Projects Section ===== */
+    #projects {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+
+    #projects h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #444;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      padding: 2rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      color: #764ba2;
+    }
+
+    .project-card p {
+      flex-grow: 1;
+      margin: 1rem 0;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .project-card a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: #667eea;
+      color: white;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      transition: background 0.2s ease;
+      text-align: center;
+    }
+
+    .project-card a:hover {
+      background: #5641a9;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #f0f0f5;
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 3rem;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>My Computer Science Projects:</h1>
-        <p>Write something here.</p>
-    </header>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>NomNetwork Project</h3>
-            <p>Our demo app merges the visual excitement of Instagram with the detailed insights of Yelp. To create this, my team tied together our realistic data generation, the development of our  REST API, and the implementation of a set of user interface screens in Streamlit to create a usable end-result application.</p>
-            <a href="projects/ComputerScience/project1/details.html" target="_blank">Learn More</a>
-        </div>
-        <div class="project-card">
-            <h3>Concentration Game</h3>
-            <p>Concentration is a card game in which all of the cards are laid face down. At each turn, two cards are flipped over. The object of the game is to find pairs of matching cards. In this version, there is only one player. This was created using java and Big Bang.</p>
-            <a href="projects/ComputerScience/project2/details.html" target="_blank">Learn More</a>
-        </div>
-        <div class="project-card">
-            <h3>Drawing Machine</h3>
-            <p>This project's purpose was to form a true human-machine collaboration. The user has somewhat artistic control as they draw but the computer randomly errases work forcing an abstract outcome. Th user is free drawing with colors, shapes, and thicknesses while the computer alters the drawing with its own random shapes, directions, and durations.</p>
-            <a href="projects/ComputerScience/project3/details.html" target="_blank">Learn More</a>
-        </div>
-        <div class="project-card">
-            <h3>Creating Your Own Pixel</h3>
-            <p>This project's purpose was creating flexible code that allows a select group of photos to be used in the creation of a larger image. For example: taking pictures from an artist to make their portrait or taking photos from a trip to make a group photo. 
-            </p>
-            <a href="projects/ComputerScience/project4/details.html" target="_blank">Learn More</a>
-            
-    </section>
-    <footer>
-        <p>&copy; 2024 Danielle. All Rights Reserved.</p>
-    </footer>
+  <!-- Header -->
+  <header>
+    <h1>My Computer Science Projects 💻</h1>
+    <p>Exploring creativity and problem-solving through code</p>
+  </header>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>NomNetwork Project</h3>
+        <p>
+          Our demo app merges the visual excitement of Instagram with the detailed insights of Yelp. We tied together realistic data generation, REST API development, and user interface screens in Streamlit to create a usable end-result application.
+        </p>
+        <a href="projects/ComputerScience/project1/details.html" target="_blank">Learn More</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Concentration Game</h3>
+        <p>
+          A single-player card game where the objective is to find pairs of matching cards. Built in Java using the Big Bang library for interactivity.
+        </p>
+        <a href="projects/ComputerScience/project2/details.html" target="_blank">Learn More</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Drawing Machine</h3>
+        <p>
+          A human–machine collaboration project: users free-draw with colors, shapes, and thicknesses, while the computer randomly alters the work with its own abstract inputs.
+        </p>
+        <a href="projects/ComputerScience/project3/details.html" target="_blank">Learn More</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Creating Your Own Pixel</h3>
+        <p>
+          A flexible image mosaic generator that composes large images using smaller photos (e.g., creating a portrait from a collection of themed images).
+        </p>
+        <a href="projects/ComputerScience/project4/details.html" target="_blank">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Danielle. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
