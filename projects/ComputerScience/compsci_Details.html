@@ -6,57 +6,37 @@
   <meta name="description" content="Portfolio of Danielle showcasing projects and achievements">
   <title>Danielle | Computer Science Projects</title>
   <style>
-    /* ===== Global Styles ===== */
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f9f9fb;
-      color: #333;
-      line-height: 1.6;
+      background: #1c2721; /* deep background */
+      color: #e0e4e0; /* soft light text */
     }
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    h1, h2, h3 {
-      font-weight: 600;
-      color: #222;
-    }
-
-    /* ===== Header ===== */
     header {
-      background: linear-gradient(135deg, #667eea, #764ba2);
-      color: white;
+      background: linear-gradient(135deg, #576e58, #2e3b34);
+      color: #f0f5f0;
       text-align: center;
       padding: 4rem 2rem;
     }
 
     header h1 {
+      font-size: 2.8rem;
       margin: 0;
-      font-size: 3rem;
     }
 
-    header p {
-      margin-top: 1rem;
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
-
-    /* ===== Projects Section ===== */
-    #projects {
-      max-width: 1200px;
-      margin: 3rem auto;
-      padding: 0 2rem;
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
     }
 
     #projects h2 {
       text-align: center;
-      margin-bottom: 2rem;
       font-size: 2rem;
-      color: #444;
+      margin-bottom: 2rem;
+      color: #cfd8d0;
     }
 
     .projects-grid {
@@ -66,65 +46,59 @@
     }
 
     .project-card {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      background: #253129; /* card base */
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
       padding: 2rem;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      border: 1px solid #3a4b40;
     }
 
     .project-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.35);
     }
 
     .project-card h3 {
       margin-top: 0;
       font-size: 1.4rem;
-      color: #764ba2;
+      color: #dfe7df;
     }
 
     .project-card p {
-      flex-grow: 1;
-      margin: 1rem 0;
-      font-size: 0.95rem;
-      color: #555;
+      font-size: 1rem;
+      color: #aeb8b0;
+      margin: 0.5rem 0 1.5rem;
     }
 
     .project-card a {
       display: inline-block;
-      margin-top: 1rem;
+      text-decoration: none;
+      background: #576e58; /* button green */
+      color: #fff;
       padding: 0.6rem 1.2rem;
-      background: #667eea;
-      color: white;
-      border-radius: 6px;
-      font-size: 0.9rem;
-      transition: background 0.2s ease;
-      text-align: center;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      transition: background 0.3s ease;
     }
 
     .project-card a:hover {
-      background: #5641a9;
+      background: #435444;
     }
 
-    /* ===== Footer ===== */
     footer {
       text-align: center;
       padding: 1.5rem;
-      background: #f0f0f5;
+      background: #222d26;
       font-size: 0.9rem;
-      color: #666;
-      margin-top: 3rem;
+      color: #a3aea5;
     }
   </style>
 </head>
 <body>
   <!-- Header -->
   <header>
-    <h1>My Computer Science Projects 💻</h1>
+    <h1>My Computer Science Projects</h1>
     <p>Exploring creativity and problem-solving through code</p>
   </header>
 
@@ -151,7 +125,7 @@
       <div class="project-card">
         <h3>Drawing Machine</h3>
         <p>
-          A human–machine collaboration project: users free-draw with colors, shapes, and thicknesses, while the computer randomly alters the work with its own abstract inputs.
+          A human-machine collaboration project: users free-draw with colors, shapes, and thicknesses, while the computer randomly alters the work with its own abstract inputs.
         </p>
         <a href="projects/ComputerScience/project3/details.html" target="_blank">Learn More</a>
       </div>
