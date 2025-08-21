@@ -1,40 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 2 - Concentration Game</title>
-    <link rel="stylesheet" href="../../style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 2 - Concentration Game</title>
+  <link rel="stylesheet" href="../../style.css">
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    section h2 {
+      color: #444;
+      border-bottom: 2px solid #e5e5e5;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    ul, ol {
+      margin-left: 1.5rem;
+      padding-left: 1rem;
+    }
+
+    ul li, ol li {
+      margin: 0.5rem 0;
+    }
+
+    a {
+      color: #667eea;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      background: #667eea;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .btn-link:hover {
+      background: #5643cc;
+    }
+
+    footer {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    footer a {
+      color: #764ba2;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Concentration Game</h1>
-    </header>
-    <section>
-        <h2>About the Project</h2>
-        <p>This game was created to practice mutable world states, ArrayLists, mutable data structures and loops.</p>
-        <h2>Steps Taken To Complete Project</h2>
-        <ul>
-            <p>1. Conceptualized the Game</li>
-            <p>2. Setup project in Eclipse IDE and structured the project with necessary classes and methods</li>
-            <p>3. Implemented classes, developed game logic, and implemented key features </li>
-            <p>4. Handled user interaction </li>
-            <p>5. Designed the user interface and added difficulty modes </li>
-        </ul>
-        <h2>How to Run</h2>
-        <p>To play the game:</p>
-        <ol>
-            <li>Clone the repository (or download it as a ZIP).</li>
-            <li>Open the project in an IDE like Eclipse.</li>
-            <li>Set up dependencies (like the Big Bang library, if required).</li>
-            <li>Compile and run the game.</li>
+  <header>
+    <h1>Concentration Game</h1>
+    <p>A memory card-matching game built with Java & Big Bang</p>
+  </header>
 
-        </ol>
-        <h2>Repository</h2>
-        <p><a href="https://github.com/elliewilliams407/Concentration-Game" target="_blank">View on GitHub</a></p>
-    </section>
-    <footer>
-        <a href="../../index.html">Back to Portfolio</a>
-    </footer>
+  <section>
+    <h2>About the Project</h2>
+    <p>
+      This game was developed to practice mutable world states, ArrayLists, 
+      loops, and mutable data structures. The player flips two cards per turn, 
+      with the goal of finding all matching pairs. The game includes 
+      difficulty modes and a user-friendly interface.
+    </p>
+
+    <h2>Steps Taken</h2>
+    <ul>
+      <li>Conceptualized the overall game mechanics and flow.</li>
+      <li>Structured the project in Eclipse IDE with appropriate classes and methods.</li>
+      <li>Implemented game logic, core classes, and key features.</li>
+      <li>Added player interaction handling and difficulty options.</li>
+      <li>Designed a clean, interactive user interface for gameplay.</li>
+    </ul>
+
+    <h2>How to Run</h2>
+    <ol>
+      <li>Clone the repository (or download as a ZIP).</li>
+      <li>Open the project in Eclipse or another Java IDE.</li>
+      <li>Set up dependencies (such as the Big Bang library).</li>
+      <li>Compile and run the game.</li>
+    </ol>
+
+    <h2>Repository</h2>
+    <a class="btn-link" href="https://github.com/elliewilliams407/Concentration-Game" target="_blank">
+      View on GitHub
+    </a>
+  </section>
+
+  <footer>
+    <a href="../../index.html">← Back to Portfolio</a>
+  </footer>
 </body>
 </html>
