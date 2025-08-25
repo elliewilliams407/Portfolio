@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Danielle showcasing projects and achievements">
+  <title>Danielle | Engineering Projects</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f5f0; /* deep background */
+      color: #1c2721; /* soft light text */
+    }
+
+    header {
+      background: linear-gradient(135deg, #576e58, #2e3b34);
+      color: #f0f5f0;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    #projects h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #1c2721;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background: #253129; /* card base */
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      padding: 2rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border: 1px solid #3a4b40;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      color: #dfe7df;
+    }
+
+    .project-card p {
+      font-size: 1rem;
+      color: #aeb8b0;
+      margin: 0.5rem 0 1.5rem;
+    }
+
+    .project-card a {
+      display: inline-block;
+      text-decoration: none;
+      background: #576e58; /* button green */
+      color: #fff;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      transition: background 0.3s ease;
+    }
+
+    .project-card a:hover {
+      background: #435444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #222d26;
+      font-size: 0.9rem;
+      color: #a3aea5;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>My Engineering Projects</h1>
+    <p>Combining innovation, creativity, and problem-solving to achieve a goal.</p>
+  </header>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>NomNetwork Project</h3>
+        <p>
+          Our demo app merges the visual excitement of Instagram with the detailed insights of Yelp. We tied together realistic data generation, REST API development, and user interface screens in Streamlit to create a usable end-result application.
+        </p>
+        <a href="project1/details.html" >Learn More</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Concentration Game</h3>
+        <p>
+          A single-player card game where the objective is to find pairs of matching cards. Built in Java using the Big Bang library for interactivity.
+        </p>
+        <a href="project2/details.html" >Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Danielle. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
