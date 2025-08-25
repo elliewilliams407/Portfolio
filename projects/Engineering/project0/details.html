@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Your Creature | Portfolio</title>
+  <link rel="stylesheet" href="../../style.css">
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f9f8;
+      color: #1c2721;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1c2721, #576e58);
+      color: #fff;
+      text-align: center;
+      padding: 4rem 2rem 3rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      letter-spacing: 1px;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 2.5rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    section h2 {
+      margin-top: 0;
+      font-size: 1.8rem;
+      color: #2e3c34;
+      border-left: 6px solid #576e58;
+      padding-left: 0.6rem;
+      margin-bottom: 1rem;
+    }
+
+    section p {
+      font-size: 1.05rem;
+      margin-bottom: 1.2rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    ul li {
+      margin-bottom: 0.8rem;
+      font-size: 1rem;
+    }
+
+    a {
+      color: #2e5e4e;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .repo-link {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.2rem;
+      background: #576e58;
+      color: #fff;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .repo-link:hover {
+      background: #1c2721;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.95rem;
+      background: #f0f2f1;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: #1c2721;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Create Your Creature</h1>
+    <p>Applied the Engineering Design Process to create a game for visitors to the Boston Children Museum. This successful utilization ultimately led to my team's project being voted best exhibit game by the museum staff for its successful educational reach and engagement!</p>
+    <p><b>*As per requirement, a patent for this game was submitted and granted by Professor Hertz</b></p>
+  </header>
+
+  <section>
+    <h2>Project Task</h2>
+    <p>
+      Our professors sections of engineering students were tasked to create a fun, interactive, and ideally informative exhibit for children at the Boston Children's Museum. Each section had to come up with an overall theme where there were subthemes assigned to smaller groups that a game had to be centered around. There was also a competition set. At the end of the exhibition in the Childrens Museum, the staff would vote for the best game and best section!
+    </p>
+    <p>
+        My sections theme was Biomes and my group was assigned the Alpines. We named our game <b>Create Your Creature</b>.
+    </p>
+  </section>
+
+  <section>
+    <h2>Problem Statement</h2>
+    <h3>Functions:</h3>
+    <ul>
+      <li>Be a hands-on game for children</li>
+      <li>Take only 5-10 minutes to complete</li>
+      <li>Teach and expose players to animals and the environment</li>
+    </ul>
+    <h3>Objectives:</h3>
+    <ul>
+      <li>Should be <b>educational</b></li>
+      <ul>
+        <li>Should include Alpine specific content</li>
+        <li>Players need to learn in order to play the game</li>
+      </ul>
+      <li>Should be <b>engaging</b> and <b>fun</b>!</li>
+      <ul>
+        <li>Should be playable by a range of ages</li>
+        <li>Cant be too boring for older kids</li>
+        <li>Cant be too challenging for younger kids</li>
+      </ul>
+    </ul>
+    <h3>Constraints:</h3>
+    <ul>
+      <li>Spend less than the $120 budget</li>
+      <li>Include Arduino components</li>
+      <li>Everything must fit into plastic bins</li>
+      <li>All pieces must be larger than 3 cm2, per museum requirements</li>
+    </ul>
+  </section>
+
+  <section>
+        <h2>Design Functionality:</h2>
+    <p>As a group, we decided to focus on teaching kids about the animals that live in the Alpine biome. At first, the plan was to create a computer game that had the kids use a joystick to control an animal’s movements. However, we wanted the experience to be more hands-on. This led us to the idea of allowing kids to design their own animals to live in the Alpines. </p>
+    <p>	This idea created necessary functions in order for it to be successful. First, the pieces needed to be able to fit together and fit together well so that nothing breaks. No extraordinary force should be required to put pieces together or pull pieces apart. The kids also must be able to recognize how they are putting pieces together, which body parts represent what, and obtain a creature after they are done. This means that the creation of these pieces must be distinct in what feature it represents—a leg must look like a leg and a head must look like a head. Then, the algorithm developed must sense the user’s choice of animal features and display an understandable score. What pieces the player chooses to use should affect the score that is produced either positively or negatively. A variety of scores should be obtainable to allow the game to remain interesting and incorporate a competitive aspect.</p>
+  </section>
+
+  <section>
+    <h2>Prototyping, Testing, and Final Design of the Game</h2>
+    <p>Our station was decided to be composed of two main sections. The first will be the build section while the second is the testing station. Each of these experienced its own version of the design cycle as prototypes, testing, and new designs were implemented.</p>
+
+    <h3>Build Station:</h3>
+    <p>The biggest decision that needed to be made in regard to what the children will be using to make their creatures was the material:</p>\
+    <ul>
+        <li>3D Printing Filament-> capture interest but cost more than our budget allowed</li>
+        <li>Cardboard -> cheap and allowed many parts to be made with the possibiliity of children taking their creatures home but was too flimsy and shapes would be too inaccurate</li>
+        <li>Laser Cut Wood -> relatively cheap, sturdy, precise measurements, easily decorated</li>
+    </ul>
+    <p>Therefore, laser cutting with wood was settled on as the ultimate material and method.</p>
+    
+    <p>Five main types of parts were drawn using AutoCAD: body, head, front legs, back legs, horns, and tails. Clip art images were imported into AutoCAD so that, using the curve function, each animal could be traced. Puzzle piece connectors were then added to the separating region of the different types of parts. For example, the head and neck were separated. Unique circles were created for each category of separation, but those types of circles were kept uniform across animals. This means that every puzzle piece shape separating the head and body was the same but also differed from the other separating regions, such as the body and legs. Dimensions were tested and adjusted so that every individual piece was greater than three centimeters in length and height.</p>
+    <img src="image2.png" alt="Bird Head">
+
+    <p> Once the dimensions were set and checked, pieces were separated and arranged so that more of the AutoCAD template could be filled. The goal was to create as many pieces as possible so the drawings were arranged to fit the most within a 12-by-12-inch board. This allowed us to utilize our budget. In total, 38 total parts were created!</p>
+    <p>The clipart images used to trace the parts was then edited to have different colors and textures so that they could be printed and mod podged to the wood, but have a variety of features. There were six bodies, nine legs, eleven heads, four horns, and eight tails but each had a different feature distinguishing it from the rest.</p>
+    <img src="printed.png" alt="Wood Board Ready to be Laser Cut">
+    
+    <h3>Testing Station:</h3>
+    <p>Originally, the prototype consisted of many buttons, each one mapped to a different body part. However, this proved to be very inaccurate in reading user presses. This also proved to be too complex for the final model since dozens of buttons and wires would be needed to read the number of possible body parts the user could choose from since this expanded from the initial amount set. These issues eventually led to the abandonment of the buttons. In its stead, we decided to use potentiometers as dials to allow the user to select the body part in that way. Potentiometers are just variable resistors, meaning that the RedBoard could read each change in the resistance when the user turns the dial. Since the RedBoard can read a wide range of resistance values from the potentiometers, we used the map function to map certain ranges of resistance of the potentiometers to specific body parts. Each body part we had was assigned a score. </p>
+    <p>After the code reads the user’s inputted dial configuration, it checks which body parts the user selected, and assigns a score from 1 to 5, depending on how well that body part would aid the creature in surviving the alpines. These scores are added to the final score. After this step, each combination in different body parts is checked, where if a combination is valid for the selected creature, points are either awarded or subtracted. The code will award -15 to 15 points per combination. These points are added to the final score!</p>
+    <img src="image3.png" alt="Potentiometers">
+    <p>In the end, the score is converted into a readable output for the user in the form of the LED strip. If the score is below 20, the LED’s light up red and the creature would not survive well. If the score is above 20 or below 40, the LED’s will light up yellow and the creature would have a somewhat likely chance to survive. If the score is above 40, the creature would have a high likelihood to survive in the alpines. This is conveyed not only through color, but the number of LED’s that light up, lighting up from right to left in a sequential pattern.</p>
+    </section>
+
+  <section>
+    <h2>Instructions Given to Players for the Game</h2>
+    <p>A poster board was set up that detailed the exact steps kids should take along with a list of fun facts they could read and learn from! This was set up directly in front of the station so that kids could easily look up at it.</p>
+    <h3>Create your creature!</h3>
+    <p>Use the parts to create a unique creature for the Alpines! If you need any hints, check out our fun fact.</p>
+    <h3>Test your creature!</h3>
+    <p>Input all the parts you've chosen and find out ow well your creature would survive in the Alpines!</p>
+    <h3>Photograph your creature!</h3>
+    <p>Take a picture at our photography station! <b></b>Dont forget to give it a name!</b></p>
+</section>
+
+<section>
+    <h2>Observations and Measurements from Exhibition Day</h2>
+    <h3>Qualitative:</h3>
+    <ul>
+        <li>Bigger groups appeared in the beginning and slowly thinned out</li>
+        <li>More parents took pictures of their kids in the beginning, usually right after the kid created their creature and before they tested it</li>
+        <li>Fewer pictures were taken when there was a big group of kids on the floor sifting through the parts</li>
+        <li>Kids would talk to the other children next to them as they exchanged parts and ideas</li>
+        <li>Kids would typically show their parents their creation, if their parent was close by, before testing</li>
+    </ul>
+    <h3>Quantitative:</h3>
+    <ul>
+        <li>95 total kids visited the station</li>
+        <li>There were always three or more kids at the station at a time</li>
+        <li>82 kids finished the entirety of the game while the other 13 left either after making the creature or in the middle of making a creature</li>
+        <li>21 kids took pictures with their creatures</li>
+        <li>Kids averaged seven minutes spent playing this game, which includes waiting in line to test</li>
+        <li>The most kids at the station at once was 8</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Final Remarks</h2>
+    <p>The first objective, that the game be educational and fun, was met. Many kids read the board containing facts about the Alpine biome to create the best creatures they could. However, there were other kids that simply created creatures as they desired, not factoring in what features would be best for the Alpines, but rather what seemed the coolest. Regardless, once the score via the LED strip was received, we often told kids what parts of the animal made good additions in the Alpines and what parts would be would not help.</p>
+    <p>The final objective, that the game must be playable by all ages, was also met; toddlers enjoyed the game as they fit the pieces together and college students gave only positive feedback during the section’s trial run. </p>
+</section>
+
+<section>
+    <h2>Final Project Report</h2>
+    <a href="finalreport.pdf" download>Download PDF</a>
+</section>
+  <footer>
+    <a href="../../index.html">&larr; Back to Portfolio</a>
+  </footer>
+</body>
+</html>
