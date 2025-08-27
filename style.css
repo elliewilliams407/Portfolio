@@ -16,7 +16,7 @@ body {
 
 /* Header */
 header {
-    background: #415e42;
+    background: #576e58;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -46,7 +46,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #415e42;
+    color: #576e58;
     font-weight: bold;
 }
 
@@ -65,15 +65,31 @@ section h2 {
 }
 
 /* Experience Cards */
-.experience-card { border: 1px solid #1c1915; color: #000000; border-radius: 5px; margin: 10px 0; padding: 15px; text-align: center; background: #9e998d; } 
-.experience-card img { max-width: 100%; border-radius: 5px; margin-bottom: 10px; } 
-.experience-card a { text-decoration: none; color: #576e58; font-weight: bold; } 
-.experience-card a:hover { text-decoration: underline; }
+.experience-card {
+    border: 1px solid #1c1915;
+    color: #000000;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 15px;
+    text-align: center;
+    background: #9e998d;
+}
+
 .experience-card img {
     max-width: 120px;  /* keeps logos a consistent size */
     height: auto;
     border-radius: 5px;
     margin-bottom: 10px;
+}
+
+.experience-card a {
+    text-decoration: none;
+    color: #576e58;
+    font-weight: bold;
+}
+
+.experience-card a:hover {
+    text-decoration: underline;
 }
 
 /* Project Cards */
@@ -95,7 +111,7 @@ section h2 {
 
 .project-card a {
     text-decoration: none;
-    color: #415e42;
+    color: #576e58;
     font-weight: bold;
 }
 
