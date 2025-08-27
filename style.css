@@ -64,22 +64,29 @@ section h2 {
     margin-bottom: 10px;
 }
 
-/* Project Cards */
+/* Experience Cards */
 .experience-card {
+    display: flex;
+    align-items: center;
     border: 1px solid #1c1915;
     color: #000000;
     border-radius: 5px;
     margin: 10px 0;
     padding: 15px;
-    text-align: center;
     background: #9e998d;
+    text-align: left; /* prevent awkward centering */
 }
 
-.experience-card img {
-    max-width: 120px;  /* keeps logos a consistent size */
+.experience-logo {
+    width: 100px;      /* consistent logo size */
     height: auto;
+    margin-right: 15px;
     border-radius: 5px;
-    margin-bottom: 10px;
+    flex-shrink: 0;    /* stops logo from shrinking on small screens */
+}
+
+.experience-text {
+    flex: 1;
 }
 
 .experience-card a {
