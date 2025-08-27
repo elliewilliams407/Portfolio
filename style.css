@@ -126,3 +126,74 @@ footer {
     font-size: 0.8em;
     color: #777;
 }
+
+
+
+/* EXTRA */
+
+/* Profile Image */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 15px auto;
+    border: 3px solid #415e42;
+    transition: transform 0.3s ease;
+}
+.profile-pic:hover {
+    transform: rotate(5deg) scale(1.05);
+}
+
+/* Hover Animations for Cards */
+.hover-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Project Gallery Layout */
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+/* Smooth Nav Hover */
+nav ul li a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #415e42;
+    transition: width 0.3s ease;
+}
+nav ul li a:hover {
+    color: #fff;
+}
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Fade-In Scroll Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
