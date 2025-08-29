@@ -16,10 +16,11 @@ body {
 
 /* Header */
 header {
-    background: #576e58;
+    background: url("header.png") no-repeat center center; /*#576e58;*/
     color: #fff;
-    padding: 20px 0;
+    padding: 60px 20px; /*20px 0;*/
     text-align: center;
+    position: relative; 
 }
 
 header h1 {
