@@ -16,12 +16,15 @@ body {
 
 /* Header */
 header {
-    background: url("header.png") no-repeat center center; /*#576e58;*/
+    background: url("header.png") no-repeat center center;
     background-size: cover;
     color: #fff;
-    padding: 600px 20px; /*20px 0;*/
+    height: 400px;   /* adjust to how tall you want */
+    display: flex;   /* optional: center text */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    position: relative; 
 }
 
 header h1 {
